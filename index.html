@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+<head>
+  <meta charset="utf-8">
+  <title>Registration Form</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="css/main.css" rel="stylesheet">
+</head>
+<body>
+
+  <section>
+    <div>
+      <h1>Want to go to Mars?</h1>
+      <p>We’re looking for super-awesome human beings who want to make the long trek to Mars for the adventure of a lifetime.</p>
+      <h2>Personal details</h2>
+
+      <form class="" action="https://formspree.io/thepaulbelisle@gmail.com" method="POST">
+        <div class="">
+          <label for="name">Name</label>
+          <input id="name" required>
+        </div>
+        <div>
+          <label for="number">Age</label>
+          <input id="number" required>
+        </div>
+        <div>
+          <label for="subject">Physical fitness</label>
+          <select id="subject" name="_subject">
+            <option>- Super-human</option>
+            <option>- Fit as a fiddle</option>
+            <option>- Not terribly strong</option>
+            <option>- A little couch-potato-y</option>
+          </select>
+        </div>
+        <div>
+          <label for="adress">Adress</label>
+          <input id="text" required>
+        </div>
+        <div>
+          <h2>Mission statement</h2>
+          <label for="details">Why do you want to go to Mars?</label>
+          <textarea id="details" required></textarea>
+        </div>
+        <div>
+          <button type="submit">Register for the trip!</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+</body>
+</html>
