@@ -18,7 +18,7 @@ h1 {
 @media only screen and (min-width: 60em) {
 
   .space-right {
-   padding-right: .5rem;
+    padding-right: .5rem;
   }
 
   .space-left {
