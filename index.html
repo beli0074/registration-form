@@ -12,8 +12,8 @@
 </head>
 <body>
 
-  <section class="island max-length">
-    <h1>Want to go to Mars?</h1>
+  <section class="island pad-t-2 max-length">
+    <h1 class="pad-t">Want to go to Mars?</h1>
 
     <p class="mega">We’re looking for super-awesome human beings who want to make the long trek to Mars for the adventure of a lifetime.</p>
     <fieldset>
@@ -21,19 +21,19 @@
     </fieldset>
     <form action="https://formspree.io/thepaulbelisle@gmail.com" method="POST">
       <div class="grid">
-        <div class="quarter push unit xs-1 l-1-2">
+        <div class="quarter space-right push unit xs-1 m-1 l-1-2">
           <label for="name">Name</label>
           <input id="name" required>
         </div>
-        <div class="quarter push unit xs-1 l-1-2">
+        <div class="quarter space-left push unit xs-1 m-1 l-1-2">
           <label for="number">Age</label>
           <input id="number" required>
         </div>
-        <div class="quarter push unit xs-1 l-1-2">
+        <div class="quarter space-right push unit xs-1 m-1 l-1-2">
           <label for="email">Email</label>
-          <input id="email" type="email" placeholder="me@me.com" name="name" required>
+          <input id="email" type="email" name="name" required>
         </div>
-        <div class="quarter push unit xs-1 l-1-2">
+        <div class="quarter space-left push unit xs-1 m-1 l-1-2">
           <label for="subject">Physical fitness</label>
           <select id="subject" name="_subject">
             <option>- Super-human</option>
@@ -52,11 +52,12 @@
           <legend class="italic mega">Mission statement</legend>
         </fieldset>
         <label for="details">Why do you want to go to Mars?</label>
-        <textarea id="details" name="_subject" required></textarea>
+        <textarea id="details" name="detail" required></textarea>
       </div>
-      <div class="push">
+      <div class="text-center push">
         <button class="btn btn-dark mega" type="submit">Register for the trip!</button>
       </div>
+      <input type="hidden" name="_subject" value="Request to join the mission">
     </form>
   </section>
 
